@@ -19,28 +19,53 @@ Functional programming is a paradigm that allows programming using expressions i
 
 
 ## Implementations using Functional Programming
+
 ### Using Streams, Filters and Lambdas:
 * [Print each element from list in its own line](/src/main/java/com/ysingh/functional/FP01PrintListElement.java)
 * [Print courses, courses having name with Spring, courses having name greater than 3 characters](src/main/java/com/ysingh/functional/FP02CourseExcerise.java)
+
 ### Using Map:
 * [Print Square of each number in the list](src/main/java/com/ysingh/functional/FP03PrintSquareOfEachListElement.java)
+
 ### Using Reduce:
 * [Print sum of all elements in the list](src/main/java/com/ysingh/functional/FP04AddNumbersInList.java)
 * [Print max and min number from all elements in the list](src/main/java/com/ysingh/functional/FP05MaximumAndMinimumNumberInList.java)
 * [Square every number in a list and find the sum of squares](src/main/java/com/ysingh/functional/FP06Excersise.java)
 * [Cube every number in a list and find the sum of cubes](src/main/java/com/ysingh/functional/FP06Excersise.java)
 * [Find sum of odd numbers in a list](src/main/java/com/ysingh/functional/FP06Excersise.java)
+
 ### Using Distinct and Sorted:
 * [Print distinct numbers in the list](src/main/java/com/ysingh/functional/FP07DistinctAndSorted.java)
 * [Sort list of numbers and print it](src/main/java/com/ysingh/functional/FP07DistinctAndSorted.java)
 * [Sort list of strings and print it](src/main/java/com/ysingh/functional/FP07DistinctAndSorted.java)
+
 ### Using Collect:
 * [Square each element of list and collect it as new list](src/main/java/com/ysingh/functional/FP08Collect.java)
 * [Find all even element of list and collect it as new list](src/main/java/com/ysingh/functional/FP08Collect.java)
 * [Find length of each course element of list and collect it as new list](src/main/java/com/ysingh/functional/FP08Collect.java)
+
+### Using allMatch, noneMatch, anyMatch:
+* [Example](src/main/java/com/ysingh/functional/FP12CustomClass.java)
+
+### Using Comparator:
+* [Example](src/main/java/com/ysingh/functional/FP12CustomClass.java)
+
+### Using skip, limit:
+* [Example](src/main/java/com/ysingh/functional/FP12CustomClass.java)
+
+### Using max, min, findFirst, findAny:
+* [Example](src/main/java/com/ysingh/functional/FP12CustomClass.java)
+
+### Using sum, average, count:
+* [Example](src/main/java/com/ysingh/functional/FP12CustomClass.java)
+
+### Using groupingBy:
+* [Example](src/main/java/com/ysingh/functional/FP12CustomClass.java)
+
 ### Terminal or Intermediate operations:
 * Function or method which returns another stream of element called as Intermediate functions or methods or operations.
 * Function or method which does not return another stream of element called as Terminal functions or methods or operations.
+
 ### Functional Interfaces:
 A functional interface has exactly one abstract method.
 * **Predicate\<T\>:** Represents a predicate (boolean-valued function) of one argument.
@@ -77,6 +102,11 @@ A functional interface has exactly one abstract method.
     * [Example](src/main/java/com/ysingh/functional/FP09FunctionalInterface.java)
 * **IntUnaryOperator:** Represents an operation on a single int-valued operand that produces an int-valued result.
     * [Example](src/main/java/com/ysingh/functional/FP09FunctionalInterface.java)
+    
 ### Behavior Parameterization:
 Passing the behaviour as parameter or argument to a method is called as Behavior Parameterization.
 * [Example](src/main/java/com/ysingh/functional/FP10BehaviourParameterization.java)
+
+### Method Reference:
+Method reference is used to refer method of functional interface. The Method reference can only be used to replace a single method of lambda expression.
+* [Example](src/main/java/com/ysingh/functional/FP11MethodReferences.java)
