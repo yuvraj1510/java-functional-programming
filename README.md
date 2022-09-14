@@ -38,3 +38,45 @@ Functional programming is a paradigm that allows programming using expressions i
 * [Square each element of list and collect it as new list](src/main/java/com/ysingh/functional/FP08Collect.java)
 * [Find all even element of list and collect it as new list](src/main/java/com/ysingh/functional/FP08Collect.java)
 * [Find length of each course element of list and collect it as new list](src/main/java/com/ysingh/functional/FP08Collect.java)
+### Terminal or Intermediate operations:
+* Function or method which returns another stream of element called as Intermediate functions or methods or operations.
+* Function or method which does not return another stream of element called as Terminal functions or methods or operations.
+### Functional Interfaces:
+A functional interface has exactly one abstract method.
+* **Predicate\<T\>:** Represents a predicate (boolean-valued function) of one argument.
+    * [Example](src/main/java/com/ysingh/functional/FP09FunctionalInterface.java)
+* **Function\<T, R\>:** Represents a function that accepts one argument and produces a result.
+    * [Example](src/main/java/com/ysingh/functional/FP09FunctionalInterface.java)
+* **Consumer\<T\>:** Represents an operation that accepts a single input argument and returns no result.
+    * [Example](src/main/java/com/ysingh/functional/FP09FunctionalInterface.java)
+* **BinaryOperator\<T\>:** Represents an operation upon two operands of the same type, producing a result of the same type as the operands.
+    * [Example](src/main/java/com/ysingh/functional/FP09FunctionalInterface.java)
+* **Supplier\<T\>:** Represents a supplier of results. It does not take any arguments.
+    * [Example](src/main/java/com/ysingh/functional/FP09FunctionalInterface.java)
+* **UnaryOperatory\<T\>:** Represents an operation on a single operand that produces a result of the same type as its operand.
+    * [Example](src/main/java/com/ysingh/functional/FP09FunctionalInterface.java)
+* **BiPredicate\<T, R\>:** Represents a predicate (boolean-valued function) of two arguments.
+    * [Example](src/main/java/com/ysingh/functional/FP09FunctionalInterface.java)
+* **BiFunction\<T, U, R\>:** Represents a function that accepts two arguments and produces a result.
+    * [Example](src/main/java/com/ysingh/functional/FP09FunctionalInterface.java)
+* **BiConsumer\<T, U\>:** Represents an operation that accepts two input arguments and returns no result.
+    * [Example](src/main/java/com/ysingh/functional/FP09FunctionalInterface.java)
+* **IntBinaryOperator:** Represents an operation upon two int-valued operands and producing an int-valued result.
+    * [Example](src/main/java/com/ysingh/functional/FP09FunctionalInterface.java)
+* **IntConsumer:** Represents an operation that accepts a single int-valued argument and returns no result.
+    * [Example](src/main/java/com/ysingh/functional/FP09FunctionalInterface.java)
+* **IntFunction\<R\>:** Represents a function that accepts an int-valued argument and produces a result.
+    * [Example](src/main/java/com/ysingh/functional/FP09FunctionalInterface.java)
+* **IntPredicate:** Represents a predicate (boolean-valued function) of one int-valued argument.
+    * [Example](src/main/java/com/ysingh/functional/FP09FunctionalInterface.java)
+* **IntSupplier:** Represents a supplier of int-valued results.
+    * [Example](src/main/java/com/ysingh/functional/FP09FunctionalInterface.java)
+* **IntToDoubleFunction:** Represents a function that accepts an int-valued argument and produces a double-valued result.
+    * [Example](src/main/java/com/ysingh/functional/FP09FunctionalInterface.java)
+* **IntToLongFunction:** Represents a function that accepts an int-valued argument and produces a long-valued result.
+    * [Example](src/main/java/com/ysingh/functional/FP09FunctionalInterface.java)
+* **IntUnaryOperator:** Represents an operation on a single int-valued operand that produces an int-valued result.
+    * [Example](src/main/java/com/ysingh/functional/FP09FunctionalInterface.java)
+### Behavior Parameterization:
+Passing the behaviour as parameter or argument to a method is called as Behavior Parameterization.
+* [Example](src/main/java/com/ysingh/functional/FP10BehaviourParameterization.java)
