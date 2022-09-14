@@ -25,6 +25,16 @@ public class ST07DistinctAndSorted {
 		printCoursesInSortedMannerInList(courses);
 		
 		System.out.println();
+		
+		System.out.println("Print Courses in reverse sorted manner in List:");
+		printCoursesInReverseSortedMannerInList(courses);
+		
+		System.out.println();
+		
+		System.out.println("Print Courses in length sorted manner in List:");
+		printCoursesInLengthSortedMannerInList(courses);
+		
+		System.out.println();
 	}
 	
 	private static void printDistinctNumbersInList(List<Integer> numbers) {
@@ -45,7 +55,22 @@ public class ST07DistinctAndSorted {
 	}
 	
 	private static void printCoursesInSortedMannerInList(List<String> courses) {
-		courses.sort(Comparator.comparing(String::toString));
+		courses.sort(Comparator.naturalOrder());
+		for(String course : courses) {
+			System.out.println(course);
+		}
+	}
+	
+	private static void printCoursesInReverseSortedMannerInList(List<String> courses) {
+		courses.sort(Comparator.reverseOrder());
+		for(String course : courses) {
+			System.out.println(course);
+		}
+	}
+	
+	private static void printCoursesInLengthSortedMannerInList(List<String> courses) {
+		Comparator<String> sortByLength = Comparator.comparing(String::length);
+		courses.sort(sortByLength);
 		for(String course : courses) {
 			System.out.println(course);
 		}

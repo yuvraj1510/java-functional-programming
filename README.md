@@ -13,6 +13,10 @@ Functional programming is a paradigm that allows programming using expressions i
 * [Print distinct numbers in the list](src/main/java/com/ysingh/structure/ST07DistinctAndSorted.java)
 * [Sort list of numbers and print it](src/main/java/com/ysingh/structure/ST07DistinctAndSorted.java)
 * [Sort list of strings and print it](src/main/java/com/ysingh/structure/ST07DistinctAndSorted.java)
+* [Square each element of list and collect it as new list](src/main/java/com/ysingh/structure/ST08Collect.java)
+* [Find all even element of list and collect it as new list](src/main/java/com/ysingh/structure/ST08Collect.java)
+* [Find length of each course element of list and collect it as new list](src/main/java/com/ysingh/structure/ST08Collect.java)
+
 
 ## Implementations using Functional Programming
 ### Using Streams, Filters and Lambdas:
@@ -30,3 +34,7 @@ Functional programming is a paradigm that allows programming using expressions i
 * [Print distinct numbers in the list](src/main/java/com/ysingh/functional/FP07DistinctAndSorted.java)
 * [Sort list of numbers and print it](src/main/java/com/ysingh/functional/FP07DistinctAndSorted.java)
 * [Sort list of strings and print it](src/main/java/com/ysingh/functional/FP07DistinctAndSorted.java)
+### Using Collect:
+* [Square each element of list and collect it as new list](src/main/java/com/ysingh/functional/FP08Collect.java)
+* [Find all even element of list and collect it as new list](src/main/java/com/ysingh/functional/FP08Collect.java)
+* [Find length of each course element of list and collect it as new list](src/main/java/com/ysingh/functional/FP08Collect.java)

@@ -1,6 +1,7 @@
 package com.ysingh.functional;
 
 import java.util.Arrays;
+import java.util.Comparator;
 import java.util.List;
 
 public class FP07DistinctAndSorted {
@@ -24,6 +25,16 @@ public class FP07DistinctAndSorted {
 		printCoursesInSortedMannerInList(courses);
 		
 		System.out.println();
+		
+		System.out.println("Print Courses in reverse sorted manner in List:");
+		printCoursesInReverseSortedMannerInList(courses);
+		
+		System.out.println();
+		
+		System.out.println("Print Courses in length sorted manner in List:");
+		printCoursesInLengthSortedMannerInList(courses);
+		
+		System.out.println();
 	}
 	
 	private static void printDistinctNumbersInList(List<Integer> numbers) {
@@ -36,5 +47,13 @@ public class FP07DistinctAndSorted {
 	
 	private static void printCoursesInSortedMannerInList(List<String> courses) {
 		courses.stream().sorted().forEach(System.out::println);
+	}
+	
+	private static void printCoursesInReverseSortedMannerInList(List<String> courses) {
+		courses.stream().sorted(Comparator.reverseOrder()).forEach(System.out::println);
+	}
+	
+	private static void printCoursesInLengthSortedMannerInList(List<String> courses) {
+		courses.stream().sorted(Comparator.comparing(String::length)).forEach(System.out::println);
 	}
 }
