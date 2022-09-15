@@ -25,5 +25,11 @@ public class FP02CourseExcerise {
 		
 		System.out.println("Print Number of Characters for each course:");
 		courses.stream().map(course -> course.length()).forEach(System.out::println);
+		
+		System.out.println();
+		
+		System.out.println("Find first course have length greater than 11 and print it in upper case:");
+		System.out.println(courses.stream().peek(System.out::println).filter(course -> course.length() > 11).map(String::toUpperCase).peek(System.out::println).findFirst());
+		
 	}	
 }

@@ -62,9 +62,19 @@ Functional programming is a paradigm that allows programming using expressions i
 ### Using groupingBy:
 * [Example](src/main/java/com/ysingh/functional/FP12CustomClass.java)
 
+### Using Stream.of, Arrays.stream, IntStream, LongStream, BigInteger:
+* [Example](src/main/java/com/ysingh/functional/FP13Miscellaneous.java)
+
+### Using joining, flatMap:
+* [Example](src/main/java/com/ysingh/functional/FP13Miscellaneous.java)
+
+### Using parallelStreams:
+* [Example](src/main/java/com/ysingh/functional/FP13Miscellaneous.java)
+
 ### Terminal or Intermediate operations:
-* Function or method which returns another stream of element called as Intermediate functions or methods or operations.
+* Function or method which returns another stream of element called as Intermediate functions or methods or operations. They are Lazy and execute only when terminal operation is executed.
 * Function or method which does not return another stream of element called as Terminal functions or methods or operations.
+* [Example](src/main/java/com/ysingh/functional/FP02CourseExcerise.java)
 
 ### Functional Interfaces:
 A functional interface has exactly one abstract method.
@@ -110,3 +120,11 @@ Passing the behaviour as parameter or argument to a method is called as Behavior
 ### Method Reference:
 Method reference is used to refer method of functional interface. The Method reference can only be used to replace a single method of lambda expression.
 * [Example](src/main/java/com/ysingh/functional/FP11MethodReferences.java)
+
+### Higher Order Functions:
+Higher Order Function is a function which returns a function.
+* [Example](src/main/java/com/ysingh/functional/FP12CustomClass.java)
+
+### Java Made Easy:
+Few examples of real time Java problems that made very easy using functional programming
+* [Example](src/main/java/com/ysingh/functional/FP15JavaMadeEasy.java)

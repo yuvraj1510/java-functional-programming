@@ -59,6 +59,7 @@ class Course {
 
 public class FP12CustomClass {
 
+	@SuppressWarnings("unused")
 	public static void main(String[] args) {
 		
 		List<Course> courses = new ArrayList<>();
@@ -114,6 +115,14 @@ public class FP12CustomClass {
 		System.out.println(courses.stream().collect(Collectors.groupingBy(Course::getCategory, Collectors.maxBy(Comparator.comparing(Course::getReviewScore)))));
 		System.out.println(courses.stream().collect(Collectors.groupingBy(Course::getCategory, Collectors.mapping(Course::getName, Collectors.toList()))));
 		
+		
+		Predicate<Course> reviewScoreGreaterThan90Predicate2 = createPredecateReviewScore(90);
+		Predicate<Course> reviewScoreGreaterThan95Predicate2 = createPredecateReviewScore(95);
+	}
+
+	//Higher Order Function
+	private static Predicate<Course> createPredecateReviewScore(int cutOffReviewScore) {
+		return course -> course.getReviewScore() > cutOffReviewScore;
 	}
 
 }
